@@ -1,18 +1,24 @@
 {
 	"mcpServers": {
-    "context7": {
-			"type": "http",
-			"url": "https://mcp.context7.com/mcp",
-			"headers": {
-				"Authorization": "Bearer ${CONTEXT7_MCP_TOKEN_CLAUDE}"
-			}
-    },
-    "chrome-devtools": {
-			"command": "npx",
+		"context7": {
+				"type": "http",
+				"url": "https://mcp.context7.com/mcp",
+				"headers": {
+					"Authorization": "Bearer ${CONTEXT7_MCP_TOKEN_CLAUDE}"
+				}
+		},
+		"chrome-devtools": {
+				"command": "npx",
+				"args": [
+					"-y",
+					"chrome-devtools-mcp@latest"
+				]
+		},
+		"playwright": {
+      		"command": "npx",
 			"args": [
-				"-y",
-				"chrome-devtools-mcp@latest"
+				"@playwright/mcp@latest"
 			]
-    }
+    	}
 	}
 }

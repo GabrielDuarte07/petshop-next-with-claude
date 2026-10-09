@@ -417,6 +417,7 @@ export async function getUserData() {
 ## 📝 Exemplo Completo: `/account`
 
 ```
+
 /account/
 ├── page.tsx
 │   └── Server Component
@@ -468,3 +469,4 @@ export async function getUserData() {
 3. **Tipagem**: Sempre tipar inputs e outputs das funções
 4. **Validação**: Usar Zod para validar dados no servidor
 5. **Segurança**: Sempre verificar autenticação nas actions e data-access
+
